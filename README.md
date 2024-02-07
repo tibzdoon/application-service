@@ -62,7 +62,7 @@ curl --location 'http://127.0.0.1:8000/api/applications' \
 ### Update application status 
 status: in_progress, completed
 ```bash 
-curl --location --request PUT 'http://127.0.0.1:34113/api/applications/8' \
+curl --location --request PUT 'http://127.0.0.1:8000/api/applications/8' \
 --header 'Content-Type: application/ld+json' \
 --header 'Authorization: Bearer %TOKEN%' \
 --data '{
