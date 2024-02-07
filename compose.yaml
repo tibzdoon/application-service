@@ -1,5 +1,6 @@
 version: '3'
 
+#TODO: add php-fpm, php-cli, nginx...
 services:
 ###> doctrine/doctrine-bundle ###
   database:
