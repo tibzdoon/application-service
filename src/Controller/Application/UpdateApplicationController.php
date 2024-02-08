@@ -17,12 +17,14 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 #[AsController]
 class UpdateApplicationController extends AbstractController
 {
+    //TODO: use DTO instead Request
     public function __invoke(
         Request $request,
         Application $application,
         ValidatorInterface $validator,
         EntityManagerInterface $entityManager
     ): Application {
+        //TODO: move to DTO
         $constraint = new Collection([
             'status' => new Choice(choices: Application::STATUSES),
             'comment' => new NotBlank()
