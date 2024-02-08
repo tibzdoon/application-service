@@ -4,6 +4,7 @@
 docker compose up -d 
 php bin/console doctrine:migrations:migrate
 php bin/console init:users
+php bin/console lexik:jwt:generate-keypair
 symfony server:start --port=8000
 ```
 
